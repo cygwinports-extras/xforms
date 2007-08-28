@@ -1,0 +1,13 @@
+DESCRIPTION="XForms toolkit"
+HOMEPAGE="http://savannah.nongnu.org/projects/xforms/"
+SRC_URI="http://download.savannah.nongnu.org/releases/${PN}/${P}.tar.gz"
+
+DIFF_EXCLUDES="acinclude.m4"
+
+src_compile() {
+	cd ${S}
+	./autogen.sh || error "autogen.sh failed"
+	cd ${B}
+	cygconf --disable-static
+	cygmake
+}

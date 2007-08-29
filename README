@@ -1,0 +1,91 @@
+xforms
+------------------------------------------
+This is the Free Software distribution of the XForms Library, a
+graphical user interface toolkit for X Window Systems.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  libGL1-6.5.3-1
+  libX11_6-1.1.3-1
+  libXpm4-3.5.6-1
+  libjpeg62-6b-12
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  bison-2.3-1
+  cygport-0.3.5-1
+  flex-2.5.33-2
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://savannah.nongnu.org/projects/xforms/
+
+Canonical download:
+  http://download.savannah.nongnu.org/releases/xforms/
+
+-------------------------------------------
+
+Build instructions:
+  unpack xforms-1.0.90-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./xforms-1.0.90-X.cygport all
+
+This will create:
+  /usr/src/xforms-1.0.90-X-src.tar.bz2
+  /usr/src/xforms-1.0.90-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(xforms)
+  /usr/bin/fd2ps.exe
+  /usr/bin/fdesign.exe
+  /usr/share/doc/Cygwin/xforms-1.0.90.README
+  /usr/share/doc/xforms-1.0.90/COPYING.LIB
+  /usr/share/doc/xforms-1.0.90/COPYRIGHT
+  /usr/share/doc/xforms-1.0.90/ChangeLog
+  /usr/share/doc/xforms-1.0.90/INSTALL
+  /usr/share/doc/xforms-1.0.90/NEWS
+  /usr/share/doc/xforms-1.0.90/README
+  /usr/share/man/man1/fd2ps.1.gz
+  /usr/share/man/man1/fdesign.1.gz
+  /usr/share/man/man5/xforms.5.gz
+
+(libforms1)
+  /usr/bin/cygflimage-1.dll
+  /usr/bin/cygforms-1.dll
+  /usr/bin/cygformsGL-1.dll
+
+(libforms-devel)
+  /usr/include/flimage.h
+  /usr/include/forms.h
+  /usr/include/glcanvas.h
+  /usr/lib/libflimage.dll.a
+  /usr/lib/libflimage.la
+  /usr/lib/libforms.dll.a
+  /usr/lib/libforms.la
+  /usr/lib/libformsGL.dll.a
+  /usr/lib/libformsGL.la
+
+------------------
+
+Port Notes:
+
+----- version 1.0.90-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

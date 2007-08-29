@@ -1,0 +1,6 @@
+category: X11
+requires: cygwin libGL1 libX11_6 libjpeg62
+external-source: xforms
+sdesc: "XForms X11 toolkit (runtime)"
+ldesc: "This is the Free Software distribution of the XForms Library, a 
+graphical user interface toolkit for X Window Systems."

@@ -1,4 +1,3 @@
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x acinclude.m4 origsrc/xforms-1.0.90/autogen.sh src/xforms-1.0.90/autogen.sh
 --- origsrc/xforms-1.0.90/autogen.sh	2003-11-20 03:32:18.000000000 -0600
 +++ src/xforms-1.0.90/autogen.sh	2007-08-28 23:55:20.859375000 -0500
 @@ -4,18 +4,19 @@
@@ -43,7 +42,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  if ( $ACLOCAL --version ) < /dev/null > /dev/null 2>&1; then
  	echo "Building macros..."
  	for dir in . ; do
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x acinclude.m4 origsrc/xforms-1.0.90/config/cygwin.m4 src/xforms-1.0.90/config/cygwin.m4
 --- origsrc/xforms-1.0.90/config/cygwin.m4	2003-04-24 07:48:19.000000000 -0500
 +++ src/xforms-1.0.90/config/cygwin.m4	2007-08-28 23:37:56.984375000 -0500
 @@ -4,7 +4,7 @@
@@ -55,7 +53,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
      if test "$GCC" = yes; then
        # Ensure MSVC-compatible struct packing convention.
        # Depends on GCC version. gcc2 uses -fnative-struct while
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x acinclude.m4 origsrc/xforms-1.0.90/configure.ac src/xforms-1.0.90/configure.ac
 --- origsrc/xforms-1.0.90/configure.ac	2004-03-30 03:48:24.000000000 -0600
 +++ src/xforms-1.0.90/configure.ac	2007-08-28 23:55:57.296875000 -0500
 @@ -28,7 +28,6 @@
@@ -66,7 +63,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  ### check for special systems
  AC_ISC_POSIX
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x acinclude.m4 origsrc/xforms-1.0.90/gl/Makefile.am src/xforms-1.0.90/gl/Makefile.am
 --- origsrc/xforms-1.0.90/gl/Makefile.am	2003-11-20 03:33:11.000000000 -0600
 +++ src/xforms-1.0.90/gl/Makefile.am	2007-08-28 23:37:56.984375000 -0500
 @@ -7,7 +7,9 @@
@@ -80,7 +76,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  libformsGL_la_SOURCES = \
  	glcanvas.c \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x acinclude.m4 origsrc/xforms-1.0.90/image/Makefile.am src/xforms-1.0.90/image/Makefile.am
 --- origsrc/xforms-1.0.90/image/Makefile.am	2003-11-13 15:46:48.000000000 -0600
 +++ src/xforms-1.0.90/image/Makefile.am	2007-08-28 23:37:57.000000000 -0500
 @@ -7,7 +7,9 @@
@@ -94,7 +89,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  libflimage_la_SOURCES = \
  	flimage.h \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x acinclude.m4 origsrc/xforms-1.0.90/lib/Makefile.am src/xforms-1.0.90/lib/Makefile.am
 --- origsrc/xforms-1.0.90/lib/Makefile.am	2003-11-20 03:33:16.000000000 -0600
 +++ src/xforms-1.0.90/lib/Makefile.am	2007-08-28 23:37:57.000000000 -0500
 @@ -17,7 +17,9 @@

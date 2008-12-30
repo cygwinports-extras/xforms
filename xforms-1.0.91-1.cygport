@@ -1,7 +1,11 @@
 DESCRIPTION="XForms toolkit"
 HOMEPAGE="http://savannah.nongnu.org/projects/xforms/"
-SRC_URI="http://download.savannah.nongnu.org/releases/${PN}/${P}.tar.gz
-         http://download.savannah.nongnu.org/releases/${PN}/${P}.tar.gz.sig"
+SRC_URI="http://download.savannah.nongnu.org/releases/${PN}/${P}.tar.gz"
+PATCH_URI="
+	1.0.91-libtoolize.patch
+	1.0.91-no-undefined.patch
+	1.0.91-not-msvc.patch
+"
 
 abi=1
 PKG_NAMES="${PN} libforms${abi} libforms-devel"
@@ -16,6 +20,6 @@ src_compile() {
 	cd ${S}
 	./autogen.sh || error "autogen.sh failed"
 	cd ${B}
-	cygconf --disable-static
+	cygconf
 	cygmake
 }

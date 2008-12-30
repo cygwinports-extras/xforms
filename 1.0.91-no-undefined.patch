@@ -1,0 +1,39 @@
+--- origsrc/xforms-1.0.91/gl/Makefile.am	2008-09-16 09:42:58.000000000 -0500
++++ src/xforms-1.0.91/gl/Makefile.am	2008-12-30 12:45:32.768750000 -0600
+@@ -7,7 +7,9 @@
+ 
+ lib_LTLIBRARIES = libformsGL.la
+ 
+-libformsGL_la_LDFLAGS = -version-info @SO_VERSION@
++libformsGL_la_LDFLAGS = -version-info @SO_VERSION@ -no-undefined
++
++libformsGL_la_LIBADD = ../lib/libforms.la -lGL
+ 
+ libformsGL_la_SOURCES = \
+ 	glcanvas.c \
+--- origsrc/xforms-1.0.91/image/Makefile.am	2008-09-16 09:42:47.000000000 -0500
++++ src/xforms-1.0.91/image/Makefile.am	2008-12-30 12:44:42.534375000 -0600
+@@ -7,7 +7,9 @@
+ 
+ lib_LTLIBRARIES = libflimage.la
+ 
+-libflimage_la_LDFLAGS = -version-info @SO_VERSION@
++libflimage_la_LDFLAGS = -version-info @SO_VERSION@ -no-undefined
++
++libflimage_la_LIBADD = ../lib/libforms.la $(JPEG_LIB)
+ 
+ libflimage_la_SOURCES = \
+ 	flimage.h \
+--- origsrc/xforms-1.0.91/lib/Makefile.am	2008-09-16 09:42:53.000000000 -0500
++++ src/xforms-1.0.91/lib/Makefile.am	2008-12-30 12:43:18.300000000 -0600
+@@ -19,7 +19,9 @@
+ 
+ lib_LTLIBRARIES = libforms.la
+ 
+-libforms_la_LDFLAGS = -version-info @SO_VERSION@
++libforms_la_LDFLAGS = -version-info @SO_VERSION@ -no-undefined
++
++libforms_la_LIBADD = $(XPM_LIB) -lX11
+ 
+ libforms_la_SOURCES = \
+ 	align.c \

@@ -1,0 +1,11 @@
+--- origsrc/xforms-1.0.91/config/cygwin.m4	2008-09-16 09:42:46.000000000 -0500
++++ src/xforms-1.0.91/config/cygwin.m4	2008-12-30 12:46:00.487500000 -0600
+@@ -4,7 +4,7 @@
+ AC_DEFUN([CHECK_WITH_CYGWIN],
+ [
+   case $host_os in
+-  cygwin* | mingw* | pw32* )
++  mingw* | pw32* )
+     if test "$GCC" = yes; then
+       # Ensure MSVC-compatible struct packing convention.
+       # Depends on GCC version. gcc2 uses -fnative-struct while

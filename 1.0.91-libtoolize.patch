@@ -1,0 +1,31 @@
+--- origsrc/xforms-1.0.91/autogen.sh	2008-09-16 09:42:46.000000000 -0500
++++ src/xforms-1.0.91/autogen.sh	2008-12-30 12:49:24.815625000 -0600
+@@ -4,7 +4,8 @@
+ AUTOHEADER="autoheader"
+ AUTOMAKE="automake -a -c --foreign"
+ AUTOCONF="autoconf"
+-ACINCLUDE_FILES="xformsinclude.m4 libtool.m4 cygwin.m4"
++LIBTOOLIZE="libtoolize -c -f"
++ACINCLUDE_FILES="xformsinclude.m4 cygwin.m4"
+ 
+ # Discover what version of autoconf we are using.
+ autoversion=`$AUTOCONF --version | head -n 1`
+@@ -29,6 +30,18 @@
+ echo "done."
+ 
+ # Generate the Makefiles and configure files
++if ( $LIBTOOLIZE --version ) < /dev/null > /dev/null 2>&1; then
++	echo "Installing libtool files..."
++	for dir in . ; do
++	    echo "        $dir"
++	    ( cd $dir ; $LIBTOOLIZE )
++	done
++	echo "done."
++else
++	echo "libtoolize not found -- aborting"
++	exit
++fi
++
+ if ( $ACLOCAL --version ) < /dev/null > /dev/null 2>&1; then
+ 	echo "Building macros..."
+ 	for dir in . ; do

@@ -1,5 +1,5 @@
 category: X11
-requires: cygwin libforms1 libX11-devel libjpeg-devel libGL-devel
+requires: libforms1 libX11-devel libjpeg-devel libGL-devel
 external-source: xforms
 sdesc: "XForms X11 toolkit (development)"
 ldesc: "This is the Free Software distribution of the XForms Library, a 
